@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-toko.css">
+    <title>Toko Xyz</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <fieldset>
+            <legend>
+                <h1 class="heading">Perhitungan Harga Tas Toko Xyz</h1>
+            </legend>
+            <!-- Form. -->
+            <form action="checkout.php" method="post">
+                <!-- Nomor Transaksi. -->
+                <label for="no_transaksi">NomorTransaksi</label>
+                <input type="text" name="no_transaksi" class="name" required></input><br>
+                <!-- Jenis Member. -->
+                <label for="jenis_member" id="jm">Jenis Member</label><br>
+                <div id="radio">
+                    <label for="non-member"><input type="radio" name="jenis_member" value="non-member" required>
+                        Non-Member</label><br>
+                    <label for="platinum"><input type="radio" name="jenis_member" value="platinum" required>
+                        Platinum</label><br>
+                    <label for="gold"><input type="radio" name="jenis_member" value="gold" required>
+                        Gold</label><br>
+                    <label for="silver"><input type="radio" name="jenis_member" value="silver" required>
+                        Silver</label><br>
+                </div>
+                <!-- Jenis Merk. -->
+                <label for="merk">Merk</label>
+                <select name="merk" class="merk" required>
+                    <option value=""></option>
+                    <option value="guess">Guess</option>
+                    <option value="coach">Coach</option>
+                    <option value="zara">Zara</option>
+                    <option value="bodypack">Bodypack</option>
+                </select><br>
+
+                <!-- Jumlah Barang. -->
+                <label for="jumlah_barang">Jumlah Barang</label>
+                <input type="text" name="jumlah_barang" class="jumlah-barang" required></input><br>
+                <button type="submit">checkout</button>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>

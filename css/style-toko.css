@@ -153,6 +153,7 @@ form {
 label,
 form input,
 select,
+#radio,
 #jm {
   position: relative;
 }
@@ -173,4 +174,30 @@ form #radio label {
 }
 .jumlah-barang {
   left: 483px;
+}
+
+/* Responsive */
+
+@media (max-width: 670px) {
+  fieldset {
+    width: 100%;
+  }
+  form label {
+    line-height: 40px;
+  }
+  form #radio label {
+    left: 180px;
+  }
+  #jm {
+    top: 60px;
+  }
+  .name {
+    left: 70px;
+  }
+  .merk {
+    left: 145px;
+  }
+  .jumlah-barang {
+    left: 85px;
+  }
 }
